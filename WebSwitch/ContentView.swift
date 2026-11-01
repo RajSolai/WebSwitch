@@ -67,9 +67,7 @@ struct ContentView: View {
                    }
                }
            )
-           DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-               NSApplication.shared.keyWindow?.close()
-           }
+        NSApplication.shared.terminate(nil)
        }
     
     func fetchBrowsers() {
